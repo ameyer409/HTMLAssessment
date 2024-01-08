@@ -98,3 +98,19 @@ ul#teamRoster li ul li ol li:first-child {
 	font-weight: bold;
 }
 
+table thead tr {
+	background-color: lightgray;
+}
+
+table tfoot tr {
+	background-color: lightblue;
+}
+
+table tbody tr:nth-child(odd) {
+	background-color: lightblue;
+}
+
+table tbody tr:nth-child(even) {
+	background-color: lightgray;
+}
+
