@@ -33,19 +33,61 @@ blockquote {
 	color: white;
 }
 
+/*
 ul#teamRoster > li:first-child {
 	background-image: url(https://upload.wikimedia.org/wikipedia/en/4/44/Denver_Broncos_logo.svg);
 	background-repeat: no-repeat;
 	background-size: 180px 120px;
-	background-opacity: 0.5;
-	
+}
+*/
+
+ul#teamRoster > li:first-child {
+	width: 300px;
+	height: 180px;
+	display: block;
+	position: relative;
 }
 
+ul#teamRoster > li:first-child::after {
+ 	content: "";
+  	background: url(https://upload.wikimedia.org/wikipedia/en/4/44/Denver_Broncos_logo.svg);
+  	background-repeat: no-repeat;
+  	opacity: 0.5;
+  	top: 0;
+  	left: 0;
+  	bottom: 0;
+  	right: 0;
+  	position: absolute;
+  	z-index: -1;
+}
+
+/*
 ul#teamRoster > li:last-child {
 	background-image: url(https://upload.wikimedia.org/wikipedia/commons/5/5c/Chicago_Bears_logo.svg);
 	background-repeat: no-repeat;
 	background-size: 160px 90px;
 	
+}
+*/
+
+ul#teamRoster > li:last-child {
+	width: 240px;
+	height: 130px;
+	display: block;
+	position: relative;
+}
+
+ul#teamRoster > li:last-child::after {
+ 	content: "";
+  	background: url(https://upload.wikimedia.org/wikipedia/commons/5/5c/Chicago_Bears_logo.svg);
+  	background-repeat: no-repeat;
+  	opacity: 0.5;
+  	top: 0;
+  	left: 0;
+  	bottom: 0;
+  	right: 0;
+  	position: absolute;
+  	z-index: -1;
 }
 
 ul#teamRoster li img, ul#teamRoster li br {
