@@ -8,6 +8,10 @@ h1, h2, h3, h4, h5, h6{
 	text-align: center;
 }
 
+#scoreBoard thead {
+	color: blue;
+}
+
 #teamRoster li{
 	list-style: square;
 }
@@ -32,15 +36,19 @@ blockquote {
 ul#teamRoster > li:first-child {
 	background-image: url(https://upload.wikimedia.org/wikipedia/en/4/44/Denver_Broncos_logo.svg);
 	background-repeat: no-repeat;
+	background-size: 180px 120px;
+	background-opacity: 0.5;
 	
 }
 
 ul#teamRoster > li:last-child {
 	background-image: url(https://upload.wikimedia.org/wikipedia/commons/5/5c/Chicago_Bears_logo.svg);
 	background-repeat: no-repeat;
+	background-size: 160px 90px;
 	
 }
 
-ul#teamRoster li img {
+ul#teamRoster li img, ul#teamRoster li br {
 	display: none;
 }
+
