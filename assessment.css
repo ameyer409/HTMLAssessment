@@ -94,3 +94,7 @@ ul#teamRoster li img, ul#teamRoster li br {
 	display: none;
 }
 
+ul#teamRoster li ul li ol li:first-child {
+	font-weight: bold;
+}
+
